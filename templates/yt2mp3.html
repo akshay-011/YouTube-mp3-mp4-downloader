@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Download YouTube Videos in mp3!</h3><br>
+<div class="mp3-content">
+    <form action="/download-mp3" method="post">
+        <input type="text" id="link" name="link" autocomplete="off" size="30" placeholder="Paste Your YouTube Link">
+        <input type="submit" name="Download" id="download" value='Download Mp3'>
+    </form>
+</div>
+{% endblock %}

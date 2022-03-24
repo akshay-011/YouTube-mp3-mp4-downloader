@@ -1,0 +1,114 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+#choose{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5em;
+    color: #af0000;
+    a{
+        text-decoration: none;
+    }
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    color: #acacac;
+}
+.main-bar{
+    margin: 0;
+    border-bottom: 1px solid gray;
+    a{
+        display: block;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        text-decoration: none;
+        color: rgb(189, 55, 14);
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+.task-bar{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1em;
+    a{
+        position: sticky;
+        text-decoration: none;
+        margin: .2vh;
+        font-size: 20px;
+        padding: 1em 2em 1em 2em;
+        transition: .41s;
+        border-radius: .5em;
+    }
+    a:hover{
+        background-color: #acacac;
+        font-size: 20.1px;
+    }
+}
+.main{
+    position: center;
+    margin: 10%;
+}
+.mp3-content{
+    text-align: center;
+    margin: 3em;
+    #link{
+        height: 1.2em;
+        font-size: 2em;
+        text-align: center;
+        border-color: rgb(189, 55, 14);
+        border-radius: 2em;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 22px;
+    }
+    #download{
+        display: block;
+        height: 3em;
+        width: 8em;
+        color: white;
+        margin-left: 45%;
+        margin-top: 1em;
+        font-size: 1em;
+        background-color: #f00606;
+        border-radius: .5em;
+        transition: 1s;
+    }
+    #download:hover{
+        transform: scale(1.1);
+        color: black;
+        border-radius: 1.7em;
+    }
+
+}
+#quality{
+    font-size: 1.2em;
+    height: 40px;
+    width: 160px;
+    border-color: #ec5a47;
+    border-radius: 20px;
+    margin-top: 0;
+}
+.nonsense{
+    font-size: large;
+    color: black;
+}
+@keyframes colorchange {
+    from {color: rgb(189, 55, 14);}
+    to {color: #ec5a47;}
+    
+}
+#wait{
+    text-align: center;
+    color: rgb(189, 55, 14);
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+#msg{
+    text-align: center;
+}
+

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Download YouTube Videos in mp4!</h3><br>
+<div class="mp3-content">
+    <form action="/download-mp4" method="post">
+        <input type="text" id="link" name="link" autocomplete="off" size="30" placeholder="Paste Your YouTube Link">
+        <select name="quality" id="quality">
+            <option value="" selected disabled>Quality</option>
+            <option value="low">Low</option>
+            <option value="standard">Standard</option>
+            <option value="high">High</option>
+        </select>
+        <input type="submit" name="Download" id="download" value='Download Mp4'>
+    </form>
+</div>
+{% endblock %}
