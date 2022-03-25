@@ -5,7 +5,8 @@ class download(object):
     def download_mp3(link):
         import os
         from pytube import YouTube
-        path = os.getcwd()
+
+        path = os.path.join(os.getcwd(), "medias")
         mp3 = YouTube(link)
         name = mp3.title + ".mp3"
         file = mp3.streams.get_audio_only()
@@ -17,7 +18,7 @@ class download(object):
         from pytube import YouTube
         
         mp4 = YouTube(link)
-        path = os.getcwd()
+        path = os.path.join(os.getcwd(), "medias")
         name = mp4.title + ".mp4"
         if resulution == "high":
             file = mp4.streams.get_highest_resolution()
